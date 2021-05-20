@@ -167,7 +167,7 @@ void minfo(int argc, char **argv, int type UNUSEDP)
 		}
 		have_drive = 1;
 
-		if(! (Stream = find_device(drive, O_RDONLY, &dev, &boot, 
+		if(! (Stream = find_device(drive, O_RDWR, &dev, &boot,
 					   name, &media, 0, NULL)))
 			exit(1);
 
